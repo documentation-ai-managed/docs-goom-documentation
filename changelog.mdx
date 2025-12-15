@@ -1,0 +1,127 @@
+---
+title: Changelog
+description: A record of updates, new features, and improvements to CitationGenerator.AI, highlighting changes that enhance user experience and tool accuracy.
+---
+
+## Overview
+
+CitationGenerator.AI evolves rapidly to deliver better citation tools, paraphrasing, grammar checks, and readability assessments. You receive frequent updates that improve accuracy, add new styles, and fix issues for seamless academic writing.
+
+<Callout kind="info">
+  Check this changelog regularly or subscribe to our RSS feed at `/rss/changelog.xml` to stay informed about releases.
+</Callout>
+
+<Columns cols={3}>
+  <Card title="Latest: v1.2.0" icon="zap" href="#v120">
+    Enhanced paraphrasing with AI models and new Chicago 18th edition support.
+  </Card>
+  <Card title="v1.1.0" icon="trending-up" href="#v110">
+    Bulk citation processing and readability score improvements.
+  </Card>
+  <Card title="v1.0.0" icon="rocket" href="#v100">
+    Initial release with core APA, MLA, and grammar tools.
+  </Card>
+</Columns>
+
+## Recent Releases
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added Chicago 18th edition citation style with full note-bibliography support.
+- Introduced advanced paraphrasing engine using transformer models for natural rephrasing.
+
+## Improvements
+
+- Boosted grammar checker accuracy by 25% with contextual error detection.
+- Optimized readability scores to align with Flesch-Kincaid and Gunning Fog indices.
+
+## Bug Fixes
+
+- Fixed MLA in-text citation formatting for sources with multiple authors.
+- Resolved export issues in PDF and DOCX formats.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Bulk citation generator: Process up to 50 sources at once.
+- Integrated readability assessment with one-click score and suggestions.
+
+## Improvements
+
+- Faster API response times for high-volume requests, now `<200ms` average.
+
+## Bug Fixes
+
+- Corrected APA 7th edition DOI handling for preprints.
+- Patched paraphrasing tool to preserve technical terms in STEM content.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core citation generation in APA 7th, MLA 9th, and Chicago 17th styles.
+- Basic paraphrasing and grammar checking tools.
+
+## Breaking Changes
+
+- Updated authentication to use `{API_KEY}` header instead of query params.
+
+## Initial Setup
+
+Use the new auth format:
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+const response = await fetch('https://api.citationgenerator.ai/v1/cite', {
+  headers: { 'Authorization': `Bearer ${YOUR_API_KEY}` }
+});
+```
+
+```python
+import requests
+response = requests.post('https://api.citationgenerator.ai/v1/cite',
+                        headers={'Authorization': f'Bearer {YOUR_API_KEY}'})
+```
+</CodeGroup>
+
+</Update>
+
+## Stay Updated
+
+Follow these steps to ensure you always use the latest version:
+
+<Steps>
+  <Step title="Subscribe to Updates" icon="bell">
+    Add `/rss/changelog.xml` to your feed reader for instant notifications.
+  </Step>
+  <Step title="Check API Version" icon="code">
+    Query `GET /v1/version` to verify your integration matches the current release.
+  </Step>
+  <Step title="Test New Features" icon="play">
+    Use the playground at `https://app.citationgenerator.ai/playground` to experiment.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Web App" icon="globe">
+    Updates deploy automatically. Clear your browser cache after major releases.
+  </Tab>
+  <Tab title="API Users" icon="api">
+    Pin your SDK version or use semantic versioning to manage updates.
+  </Tab>
+</Tabs>
+
+<ExpandableGroup>
+  <Expandable title="Older Releases" default-open="false">
+
+    View v0.9.x and earlier changes in the [full history](/changelog/full).
+
+  </Expandable>
+</ExpandableGroup>

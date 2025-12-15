@@ -1,0 +1,138 @@
+---
+title: Guide to Citation Generation and Writing Tools
+description: Step-by-step instructions on using the core tools for citations in APA, MLA, and Chicago styles, along with paraphrasing, grammar checking, and readability assessments.
+---
+
+## Overview
+
+CitationGenerator.AI equips you with powerful tools to streamline academic writing. Generate accurate citations in APA, MLA, and Chicago styles for free. Enhance your work further with paraphrasing, grammar checks, and readability analysis to maintain precision and integrity.
+
+<Columns cols={3}>
+  <Card title="Citation Styles" icon="book-open" href="#citation-styles">
+    Create APA, MLA, or Chicago citations effortlessly.
+  </Card>
+  <Card title="Paraphrasing" icon="edit-3" href="#paraphrasing">
+    Rephrase content while preserving meaning.
+  </Card>
+  <Card title="Grammar & Readability" icon="check-circle" href="#grammar">
+    Polish your text for clarity and correctness.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Always verify generated citations against official style guides, as tools provide starting points for your reference.
+</Callout>
+
+## Citation Styles
+
+Select your preferred style and input source details to generate formatted citations instantly.
+
+<Tabs>
+  <Tab title="APA" icon="type">
+    <Steps>
+      <Step title="Enter Source Details" icon="edit">
+        Provide author, year, title, and publisher information.
+      </Step>
+      <Step title="Select APA Style" icon="settings">
+        Choose APA 7th edition from the dropdown.
+      </Step>
+      <Step title="Generate & Copy" icon="copy">
+        Click generate, then copy the formatted citation.
+      </Step>
+    </Steps>
+
+    <CodeGroup tabs="Input,Output">
+      ```json
+      {
+        "author": "Smith, J.",
+        "year": 2023,
+        "title": "Modern Research Methods",
+        "publisher": "Academic Press"
+      }
+      ```
+      ```text
+      Smith, J. (2023). *Modern research methods*. Academic Press.
+      ```
+    </CodeGroup>
+  </Tab>
+
+  <Tab title="MLA" icon="type">
+    <Steps>
+      <Step title="Input Book Details" icon="book">
+        Add author, title, container, and other edition.
+      </Step>
+      <Step title="Choose MLA 9th" icon="list">
+        Select MLA from styles menu.
+      </Step>
+      <Step title="Review Output" icon="eye">
+        Edit if needed and export.
+      </Step>
+    </Steps>
+
+    ```text
+    Smith, John. *Modern Research Methods*. Academic Press, 2023.
+    ```
+  </Tab>
+
+  <Tab title="Chicago" icon="type">
+    Generate notes-bibliography or author-date formats.
+
+    ```text
+    Smith, John. 2023. *Modern Research Methods*. Chicago: Academic Press.
+    ```
+  </Tab>
+</Tabs>
+
+## Paraphrasing Workflows
+
+Transform original text into fresh versions without altering facts. Ideal for avoiding plagiarism while retaining voice.
+
+<Steps>
+  <Step title="Paste Original Text" icon="clipboard">
+    Input up to 500 words into the paraphraser.
+  </Step>
+  <Step title="Select Mode" icon="sliders">
+    Choose standard, formal, or creative paraphrase.
+  </Step>
+  <Step title="Generate & Refine" icon="refresh-cw">
+    Review suggestions, tweak, and integrate.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="Original,Paraphrased">
+  ```text
+  Climate change poses significant risks to global ecosystems.
+  ```
+  ```text
+  Global ecosystems face substantial threats from climate change.
+  ```
+</CodeGroup>
+
+## Grammar and Readability Tools
+
+Ensure professional quality with automated checks.
+
+<Tabs>
+  <Tab title="Grammar Check" icon="alert-triangle">
+    Identifies errors in syntax, punctuation, and usage.
+
+    ```text
+    Input: Thier research shows significent results.
+    Output: Their research shows significant results.
+    ```
+  </Tab>
+  <Tab title="Readability Score" icon="bar-chart-3">
+    Assesses Flesch-Kincaid grade level and clarity.
+
+    | Metric          | Score | Interpretation      |
+    |-----------------|-------|---------------------|
+    | Flesch Reading Ease | 65  | Standard            |
+    | Grade Level     | 8     | Middle school       |
+  </Tab>
+</Tabs>
+
+<Expandable title="Advanced Tips" default-open="false">
+  Combine tools in workflow: paraphrase first, then grammar check, and verify readability `<70>` for broad accessibility.
+</Expandable>
+
+Maintain academic integrity by citing all sources properly with these integrated tools.
